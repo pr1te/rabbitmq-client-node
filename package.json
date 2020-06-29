@@ -6,6 +6,7 @@
   "scripts": {
     "start:pub": "DEBUG=rabbitmq-client,example-publisher node ./examples/publisher.js",
     "start:sub": "DEBUG=rabbitmq-client,example-subscriber node ./examples/subscriber.js",
+    "lint": "eslint --ext .js ./",
     "test": "jest --detectOpenHandles --forceExit"
   },
   "keywords": [
