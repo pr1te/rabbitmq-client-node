@@ -1,0 +1,47 @@
+env:
+  commonjs: true
+  es2020: true
+  node: true
+  jest: true
+extends:
+  - airbnb-base
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  ecmaVersion: 11
+  sourceType: script
+rules:
+  space-before-function-paren:
+    - error
+    - always
+  strict:
+    - error
+    - global
+  object-curly-newline:
+    - error
+    - ObjectExpression:
+        minProperties: 7
+        multiline: true
+        consistent: true
+      ObjectPattern:
+        minProperties: 7
+        multiline: true
+        consistent: true
+      ImportDeclaration:
+        minProperties: 7
+        multiline: true
+        consistent: true
+      ExportDeclaration:
+        minProperties: 7
+        multiline: true
+        consistent: true
+  max-len:
+    - error
+    - 150
+    - 2
+    - ignoreUrls: true
+      ignoreComments: false
+      ignoreRegExpLiterals: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true

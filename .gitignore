@@ -1,0 +1,16 @@
+.DS_Store
+
+# logs
+logs
+*.log
+
+# runtime data
+pids
+*.pid
+*.seed
+
+# dependencies directory
+node_modules
+
+# coverage directory used by tools like istanbul
+coverage
