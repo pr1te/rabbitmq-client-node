@@ -1,6 +1,5 @@
 'use strict';
 
-const { Connection } = require('amqplib');
 const sinon = require('sinon');
 const Event = require('events');
 const { Client } = require('../../lib/client');
