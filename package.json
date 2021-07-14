@@ -1,6 +1,6 @@
 {
   "name": "rabbitmq-client-node",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple rabbitmq client for nodejs",
   "main": "index.js",
   "files": [
@@ -11,6 +11,10 @@
     "start:sub": "DEBUG=rabbitmq-client,example-subscriber node ./examples/subscriber.js",
     "lint": "eslint --ext .js ./",
     "test": "jest --detectOpenHandles --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPooban/rabbitmq-client-node.git"
   },
   "keywords": [
     "amqp",
@@ -26,21 +30,25 @@
     "name": "Jugkapong Pooban",
     "email": "j.pooban@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/JPooban/rabbitmq-client-node/issues"
+  },
+  "homepage": "https://github.com/JPooban/rabbitmq-client-node#readme",
   "license": "MIT",
   "dependencies": {
-    "amqplib": "^0.5.6",
+    "amqplib": "^0.8.0",
     "debug": "^4.1.1",
-    "lodash.once": "^4.1.1"
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lodash.once": "^4.1.1",
+    "sinon": "^11.1.1"
   },
   "devDependencies": {
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "husky": "^4.2.5",
-    "jest": "^26.1.0",
-    "sinon": "^9.0.2"
+    "eslint-plugin-import": "^2.22.0"
   },
   "config": {
     "commitizen": {
